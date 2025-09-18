@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ShoppingBag, Compass } from "lucide-react";
+import { ShoppingBag, Compass, ArrowRight } from "lucide-react";
 import searchIcon from "../assets/search-icon-new.png";
 import { useTypingEffect } from "@/hooks/useTypingEffect";
 import { Link, useNavigate } from "react-router-dom";
@@ -134,7 +134,7 @@ const Index = () => {
                 onClick={handleSearchSubmit}
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-md flex items-center justify-center hover:bg-primary hover:bg-opacity-10 transition-colors duration-200"
               >
-                <img src={searchIcon} alt="Search" className="h-6 w-6" />
+                <ArrowRight className="h-6 w-6 text-primary" />
               </button>
             </div>
           </div>
