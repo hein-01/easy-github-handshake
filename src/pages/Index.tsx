@@ -132,9 +132,9 @@ const Index = () => {
               />
               <button 
                 onClick={handleSearchSubmit}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 text-muted-foreground p-2 rounded-md flex items-center justify-center hover:bg-gray-100 transition-colors"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-full flex items-center justify-center bg-gradient-to-r from-primary/10 to-primary/20 border border-primary/20 shadow-lg"
               >
-                <img src={searchIcon} alt="Search" className="h-6 w-6" />
+                <img src={searchIcon} alt="Search" className="h-6 w-6 opacity-80" />
               </button>
             </div>
           </div>
