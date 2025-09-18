@@ -134,7 +134,7 @@ const Index = () => {
                 onClick={handleSearchSubmit}
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-md flex items-center justify-center hover:bg-primary hover:bg-opacity-10 transition-colors duration-200"
               >
-                <ArrowRight className="h-6 w-6 text-primary" />
+                <ArrowRight className="h-6 w-6 text-primary hover:text-white transition-colors duration-200" />
               </button>
             </div>
           </div>
