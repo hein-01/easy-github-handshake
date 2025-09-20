@@ -16,9 +16,9 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 // Import hero background images with error handling
-const heroBg1 = "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=350&fit=crop";
-const heroBg2 = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=350&fit=crop";
-const heroBg3 = "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=1200&h=350&fit=crop";
+const heroBg1 = "https://github.com/hein-01/mysvgs/raw/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_01.jpg";
+const heroBg2 = "https://raw.githubusercontent.com/hein-01/mysvgs/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_02.jpg";
+const heroBg3 = "https://raw.githubusercontent.com/hein-01/mysvgs/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_03.jpg";
 const heroBgMobile1 = "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=350&fit=crop";
 const heroBgMobile2 = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=350&fit=crop";
 const heroBgMobile3 = "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=800&h=350&fit=crop";
