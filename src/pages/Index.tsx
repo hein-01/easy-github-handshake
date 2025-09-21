@@ -16,9 +16,9 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 // Import hero background images with error handling
-const heroBg1 = "https://github.com/hein-01/mysvgs/raw/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_01.jpg";
-const heroBg2 = "https://raw.githubusercontent.com/hein-01/mysvgs/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_02.jpg";
-const heroBg3 = "https://raw.githubusercontent.com/hein-01/mysvgs/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_03.jpg";
+const heroBg1 = "https://github.com/hein-01/mysvgs/raw/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_desktop_01_1920_350.png";
+const heroBg2 = "https://github.com/hein-01/mysvgs/raw/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_desktop_02_1920_350.png";
+const heroBg3 = "https://github.com/hein-01/mysvgs/raw/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_desktop_03_1920_350.png";
 const heroBgMobile1 = "https://raw.githubusercontent.com/hein-01/mysvgs/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_01_420w_300h.png";
 const heroBgMobile2 = "https://github.com/hein-01/mysvgs/raw/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_02_420w_300h.png";
 const heroBgMobile3 = "https://raw.githubusercontent.com/hein-01/mysvgs/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_03_420w_300h.png";
