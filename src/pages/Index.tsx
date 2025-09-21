@@ -58,11 +58,11 @@ const Index = () => {
   console.log('Index component returning JSX...'); // Debug log
   
   return (
-    <div className="min-h-screen bg-background pt-16 overflow-x-hidden">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       
       {/* Hero Banner Section */}
-      <section className="relative h-[300px] md:h-[350px] px-4 overflow-visible mb-12">
+      <section className="relative h-[300px] md:h-[350px] px-4 overflow-visible mb-8 mt-16">
         {/* Background Images Slider */}
         <div className="absolute inset-0">
           {/* Desktop Background Images */}
@@ -91,7 +91,7 @@ const Index = () => {
         </div>
         
         {/* Search Bar - positioned extending below hero */}
-        <div className="absolute -bottom-8 left-4 right-4 z-20">
+        <div className="absolute -bottom-4 left-4 right-4 z-20">
           <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-2 flex items-center">
             <div className="bg-yellow-400 rounded-l-md overflow-hidden">
               <Swiper
