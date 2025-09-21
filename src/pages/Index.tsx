@@ -91,7 +91,7 @@ const Index = () => {
         </div>
         
         {/* Search Bar - positioned extending below hero */}
-        <div className="absolute bottom-0 left-4 right-4 z-20">
+        <div className="absolute left-4 right-4 top-full transform -translate-y-1/2 z-20">
           <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-2 flex items-center">
             <div className="bg-yellow-400 rounded-l-md overflow-hidden">
               <Swiper
