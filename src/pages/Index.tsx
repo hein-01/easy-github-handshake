@@ -85,7 +85,7 @@ const Index = () => {
               style={{ backgroundImage: `url(${bg})` }}
             />
           ))}
-          <div className="absolute inset-0 bg-black/50" />
+          
         </div>
         <div className="container mx-auto text-center relative z-10">
         </div>
