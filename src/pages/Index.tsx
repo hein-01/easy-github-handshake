@@ -19,9 +19,9 @@ import 'swiper/css/navigation';
 const heroBg1 = "https://github.com/hein-01/mysvgs/raw/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_01.jpg";
 const heroBg2 = "https://raw.githubusercontent.com/hein-01/mysvgs/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_02.jpg";
 const heroBg3 = "https://raw.githubusercontent.com/hein-01/mysvgs/98b8817be5278ee6464d83f5faea77104312bb9b/banner_image_desktop_03.jpg";
-const heroBgMobile1 = "https://raw.githubusercontent.com/hein-01/mysvgs/0dc4aff74ede7ac1268fdc73bdc9de08f76d9e31/banner_image_mobile_01_360w_300h.png";
-const heroBgMobile2 = "https://github.com/hein-01/mysvgs/raw/0dc4aff74ede7ac1268fdc73bdc9de08f76d9e31/banner_image_mobile_02_360w_300h.png";
-const heroBgMobile3 = "https://raw.githubusercontent.com/hein-01/mysvgs/0dc4aff74ede7ac1268fdc73bdc9de08f76d9e31/banner_image_mobile_03_360w_300h.png";
+const heroBgMobile1 = "https://raw.githubusercontent.com/hein-01/mysvgs/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_01_420w_300h.png";
+const heroBgMobile2 = "https://github.com/hein-01/mysvgs/raw/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_02_420w_300h.png";
+const heroBgMobile3 = "https://raw.githubusercontent.com/hein-01/mysvgs/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_03_420w_300h.png";
 
 const Index = () => {
   console.log('Index component is rendering...'); // Debug log
@@ -62,7 +62,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Banner Section */}
-      <section className="relative h-[360px] md:h-[350px] px-4 overflow-visible mb-12">
+      <section className="relative h-[300px] md:h-[350px] px-4 overflow-visible mb-12">
         {/* Background Images Slider */}
         <div className="absolute inset-0">
           {/* Desktop Background Images */}
