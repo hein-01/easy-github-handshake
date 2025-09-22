@@ -170,8 +170,8 @@ const Index = () => {
               
               {/* Content */}
               <div className="flex-1 text-center lg:text-left max-w-2xl">
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-slate-600 via-purple-600 to-slate-600 dark:from-gray-300 dark:via-purple-300 dark:to-gray-300 bg-clip-text text-transparent mb-4 leading-tight">
-                  Find a business or Start your online business!
+                <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold bg-gradient-to-r from-slate-600 via-purple-600 to-slate-600 dark:from-gray-300 dark:via-purple-300 dark:to-gray-300 bg-clip-text text-transparent mb-4 leading-relaxed">
+                  Find a business or<br className="sm:hidden" /> Start your online business!
                 </h2>
                 <div className="space-y-4 text-sm md:text-base">
                   {/* Mobile Image Slider - replaces bullet points on mobile */}
