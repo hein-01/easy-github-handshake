@@ -39,14 +39,9 @@ export const Navbar = React.memo(() => {
           {/* Left Side - Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 relative z-50 md:ml-16">
-              <div className="flex flex-col leading-none">
-                <span className="text-xl md:text-2xl font-anton font-normal text-gray-600">
-                  GoLocalSG
-                </span>
-                <span className="text-base md:text-lg font-anton font-normal self-end" style={{ color: '#F8CC41' }}>
-                  .com
-                </span>
-              </div>
+              <span className="text-xl md:text-2xl font-anton font-normal text-black">
+                GoLocalSG<span className="text-base md:text-lg">.com</span>
+              </span>
             </Link>
           </div>
 
