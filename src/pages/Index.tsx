@@ -174,17 +174,58 @@ const Index = () => {
                   Find a business or Start your online business!
                 </h2>
                 <div className="space-y-4 text-sm md:text-base">
-                  <div className="flex items-center justify-center lg:justify-start gap-3">
-                    <div className="w-6 h-6 rounded-full hidden md:flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#E8E3FD'}}>
-                      <span className="text-sm font-bold" style={{color: '#A89BFA'}}>✓</span>
-                    </div>
-                    <span className="text-slate-500 dark:text-slate-400 font-medium">Discover local businesses easily</span>
+                  {/* Mobile Image Slider - replaces bullet points on mobile */}
+                  <div className="block md:hidden">
+                    <Swiper
+                      spaceBetween={15}
+                      slidesPerView={2.5}
+                      centeredSlides={false}
+                      className="mobile-business-slider"
+                    >
+                      <SwiperSlide>
+                        <div className="aspect-[9/16] rounded-xl overflow-hidden shadow-md max-w-[120px]">
+                          <img 
+                            src={mobileSlider1} 
+                            alt="Local business directory app interface"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="aspect-[9/16] rounded-xl overflow-hidden shadow-md max-w-[120px]">
+                          <img 
+                            src={mobileSlider2} 
+                            alt="Small business owner managing online store"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="aspect-[9/16] rounded-xl overflow-hidden shadow-md max-w-[120px]">
+                          <img 
+                            src={mobileSlider3} 
+                            alt="Modern POS system interface"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </SwiperSlide>
+                    </Swiper>
                   </div>
-                  <div className="flex items-center justify-center lg:justify-start gap-3">
-                    <div className="w-6 h-6 rounded-full hidden md:flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#E8E3FD'}}>
-                      <span className="text-sm font-bold" style={{color: '#A89BFA'}}>✓</span>
+                  
+                  {/* Desktop bullet points */}
+                  <div className="hidden md:block space-y-4">
+                    <div className="flex items-center justify-center lg:justify-start gap-3">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#E8E3FD'}}>
+                        <span className="text-sm font-bold" style={{color: '#A89BFA'}}>✓</span>
+                      </div>
+                      <span className="text-slate-500 dark:text-slate-400 font-medium">Discover local businesses easily</span>
                     </div>
-                    <span className="text-slate-500 dark:text-slate-400 font-medium">Get a POS and website for as little as $12/month</span>
+                    <div className="flex items-center justify-center lg:justify-start gap-3">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#E8E3FD'}}>
+                        <span className="text-sm font-bold" style={{color: '#A89BFA'}}>✓</span>
+                      </div>
+                      <span className="text-slate-500 dark:text-slate-400 font-medium">Get a POS and website for as little as $12/month</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -202,52 +243,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Mobile Image Slider Section */}
-      <section className="block md:hidden py-6 px-4">
-        <div className="container mx-auto">
-          <Swiper
-            spaceBetween={20}
-            slidesPerView={1.2}
-            centeredSlides={true}
-            className="mobile-business-slider"
-            breakpoints={{
-              480: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-              },
-            }}
-          >
-            <SwiperSlide>
-              <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={mobileSlider1} 
-                  alt="Local business directory app interface"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={mobileSlider2} 
-                  alt="Small business owner managing online store"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={mobileSlider3} 
-                  alt="Modern POS system interface"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
-          </Swiper>
         </div>
       </section>
 
