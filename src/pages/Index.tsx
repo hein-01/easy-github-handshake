@@ -23,6 +23,11 @@ const heroBgMobile1 = "https://raw.githubusercontent.com/hein-01/mysvgs/552eaf7b
 const heroBgMobile2 = "https://github.com/hein-01/mysvgs/raw/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_02_420w_300h.png";
 const heroBgMobile3 = "https://raw.githubusercontent.com/hein-01/mysvgs/552eaf7b2405ff01d6ea749d1f165971814ead9b/banner_image_mobile_03_420w_300h.png";
 
+// Import mobile slider images
+import mobileSlider1 from '@/assets/mobile-slider-1.jpg';
+import mobileSlider2 from '@/assets/mobile-slider-2.jpg';
+import mobileSlider3 from '@/assets/mobile-slider-3.jpg';
+
 const Index = () => {
   console.log('Index component is rendering...'); // Debug log
   const [searchTerm, setSearchTerm] = useState("");
@@ -197,6 +202,52 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Mobile Image Slider Section */}
+      <section className="block md:hidden py-6 px-4">
+        <div className="container mx-auto">
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={1.2}
+            centeredSlides={true}
+            className="mobile-business-slider"
+            breakpoints={{
+              480: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={mobileSlider1} 
+                  alt="Local business directory app interface"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={mobileSlider2} 
+                  alt="Small business owner managing online store"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={mobileSlider3} 
+                  alt="Modern POS system interface"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
 
