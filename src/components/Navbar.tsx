@@ -39,7 +39,7 @@ export const Navbar = React.memo(() => {
           {/* Left Side - Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 relative z-50 md:ml-16">
-              <span className="text-xl md:text-2xl font-anton font-normal text-black">
+              <span className="text-xl md:text-2xl font-anton font-normal text-gray-600">
                 GoLocalSG<span className="text-base md:text-lg">.com</span>
               </span>
             </Link>
