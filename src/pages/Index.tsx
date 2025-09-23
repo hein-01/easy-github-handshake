@@ -181,7 +181,7 @@ const Index = () => {
                   <Swiper
                     spaceBetween={0}
                     slidesPerView={1}
-                    centeredSlides={true}
+                    centeredSlides={false}
                     autoplay={{
                       delay: 4500,
                       disableOnInteraction: false,
@@ -191,28 +191,28 @@ const Index = () => {
                   >
                     <SwiperSlide>
                       <div className="h-[400px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img 
+                      <img 
                           src={mobileSlider1} 
                           alt="Local business directory app interface"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="h-[400px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img 
+                      <img 
                           src={mobileSlider2} 
                           alt="Small business owner managing online store"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="h-[400px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img 
+                      <img 
                           src={mobileSlider3} 
                           alt="Modern POS system interface"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     </SwiperSlide>
