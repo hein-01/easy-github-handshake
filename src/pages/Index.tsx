@@ -177,7 +177,7 @@ const Index = () => {
                 </h2>
                 
                 {/* Mobile Image Slider */}
-                <div className="w-full -mx-6">
+                <div className="w-full -mx-6 md:mx-0">
                   <Swiper
                     spaceBetween={0}
                     slidesPerView={1}
@@ -187,10 +187,10 @@ const Index = () => {
                       disableOnInteraction: false,
                     }}
                     modules={[Autoplay]}
-                    className="mobile-business-slider"
+                    className="mobile-business-slider px-0"
                   >
                     <SwiperSlide>
-                      <div className="h-[400px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
+                      <div className="h-[400px] rounded-none md:rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 md:hover:scale-105">
                       <img 
                           src={mobileSlider1} 
                           alt="Local business directory app interface"
@@ -199,7 +199,7 @@ const Index = () => {
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <div className="h-[400px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
+                      <div className="h-[400px] rounded-none md:rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 md:hover:scale-105">
                       <img 
                           src={mobileSlider2} 
                           alt="Small business owner managing online store"
@@ -208,7 +208,7 @@ const Index = () => {
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <div className="h-[400px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
+                      <div className="h-[400px] rounded-none md:rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 md:hover:scale-105">
                       <img 
                           src={mobileSlider3} 
                           alt="Modern POS system interface"
