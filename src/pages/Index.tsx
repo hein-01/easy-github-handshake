@@ -179,8 +179,8 @@ const Index = () => {
                 {/* Mobile Image Slider */}
                 <div className="w-full -mx-6">
                   <Swiper
-                    spaceBetween={16}
-                    slidesPerView={1.3}
+                    spaceBetween={0}
+                    slidesPerView={1}
                     centeredSlides={true}
                     autoplay={{
                       delay: 4500,
