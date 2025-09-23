@@ -177,7 +177,7 @@ const Index = () => {
                 </h2>
                 
                 {/* Mobile Image Slider */}
-                <div className="px-2 w-full">
+                <div className="w-full -mx-6">
                   <Swiper
                     spaceBetween={16}
                     slidesPerView={1.3}
