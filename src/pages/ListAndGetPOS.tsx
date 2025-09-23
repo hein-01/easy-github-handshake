@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BackButton } from "@/components/BackButton";
@@ -236,6 +237,49 @@ const ListAndGetPOS = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Get answers to common questions about our platform
+            </p>
+          </div>
+          
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="setup-time" className="bg-card rounded-lg border border-border px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                How quickly can I get my website and POS system set up?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Most businesses are up and running within 24-48 hours. Our instant setup process includes automated website creation, POS app installation, and payment processing activation. You can start taking orders immediately after completing the simple onboarding process.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="offline-pos" className="bg-card rounded-lg border border-border px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Can I use the POS system offline?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes! Our mobile POS system works completely offline. All transactions are stored locally and automatically sync to the cloud when internet connection is restored. This ensures you never miss a sale, whether you're at a farmers market, pop-up shop, or experiencing connectivity issues.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="payment-methods" className="bg-card rounded-lg border border-border px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                What payment methods does the system accept?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                We accept all major credit cards (Visa, Mastercard, American Express, Discover), debit cards, contactless payments (Apple Pay, Google Pay, Samsung Pay), and digital wallets. Transaction fees start at 2.9% + 30¢ per transaction with no monthly processing fees.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
