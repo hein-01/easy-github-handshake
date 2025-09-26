@@ -409,7 +409,7 @@ export const PopularBusinessCard = ({ business }: PopularBusinessCardProps) => {
               variant="outline" 
               className="h-5 text-xs px-1 bg-[#F5F8FA] hover:bg-[#E8EEF2] border-border -ml-1 rounded-sm"
             >
-              See Products List
+              See Products/Services List
             </Button>
           </DialogTrigger>
         </Dialog>
