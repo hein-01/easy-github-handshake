@@ -407,7 +407,7 @@ export const PopularBusinessCard = ({ business }: PopularBusinessCardProps) => {
           <DialogTrigger asChild>
             <Button 
               variant="outline" 
-              className="h-5 text-xs px-1 bg-[#E2E8F0] hover:bg-[#CBD5E1] border-border -ml-2 rounded-sm"
+              className="h-5 text-xs px-1 bg-[#CBD5E1] hover:bg-[#94A3B8] border-border -ml-2 rounded-sm"
             >
               SEE PRODUCTS/SERVICES
             </Button>
