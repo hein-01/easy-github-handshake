@@ -448,6 +448,71 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Popular Services Section */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8 text-foreground">Popular Services</h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
+            {[
+              { id: 1, image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?w=320&h=70&fit=crop", name: "Cleaning", bgColor: "bg-pink-500", link: "#cleaning" },
+              { id: 2, image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=320&h=70&fit=crop", name: "Repair", bgColor: "bg-pink-500", link: "#repair" },
+              { id: 3, image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=320&h=70&fit=crop", name: "Beauty", bgColor: "bg-pink-500", link: "#beauty" },
+              { id: 4, image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=320&h=70&fit=crop", name: "Healthcare", bgColor: "bg-gradient-to-r from-orange-400 to-orange-500", link: "#healthcare" },
+              { id: 5, image: "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=320&h=70&fit=crop", name: "Education", bgColor: "bg-gradient-to-r from-teal-400 to-orange-400", link: "#education" },
+              { id: 6, image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=320&h=70&fit=crop", name: "Food Delivery", bgColor: "bg-gradient-to-r from-teal-500 to-orange-500", link: "#food-delivery" },
+              { id: 7, image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?w=320&h=70&fit=crop", name: "Transport", bgColor: "bg-gradient-to-r from-orange-500 to-orange-600", link: "#transport" },
+              { id: 8, image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=320&h=70&fit=crop", name: "Consulting", bgColor: "bg-gradient-to-r from-teal-400 to-orange-400", link: "#consulting" },
+              { id: 9, image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=320&h=70&fit=crop", name: "Installation", bgColor: "bg-gradient-to-r from-purple-500 to-purple-600", link: "#installation" },
+              { id: 10, image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=320&h=70&fit=crop", name: "Legal", bgColor: "bg-gradient-to-r from-purple-500 to-purple-600", link: "#legal" },
+              { id: 11, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=320&h=70&fit=crop", name: "Photography", bgColor: "bg-gradient-to-r from-purple-500 to-purple-600", link: "#photography" },
+              { id: 12, image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=320&h=70&fit=crop", name: "Marketing", bgColor: "bg-gradient-to-r from-purple-500 to-purple-600", link: "#marketing" }
+            ].map((service) => (
+              <a 
+                key={service.id} 
+                href={service.link}
+                className="group relative rounded-lg overflow-hidden shadow-lg cursor-pointer block transition-all duration-300 hover:ring-4 hover:ring-primary"
+              >
+                <img
+                  src={service.image}
+                  alt={service.name}
+                  className="w-full h-[70px] object-cover"
+                />
+                <div className="absolute inset-0 flex flex-col justify-between p-3 text-white">
+                  <div>
+                    <h3 className="text-sm font-semibold">{service.name}.</h3>
+                  </div>
+                  <div className="flex items-center text-xs">
+                    <span className="underline">Find Services</span>
+                    <svg className="w-3 h-3 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+          
+          {/* Full Width Banner */}
+          <div className="mt-2.5">
+            <a 
+              href="#all-services" 
+              className="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block w-full"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-80"></div>
+              <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1280&h=35&fit=crop"
+                alt="Full width banner"
+                className="w-full h-[35px] object-cover"
+              />
+              <div className="absolute inset-0 flex items-center justify-center text-white">
+                <h3 className="text-sm font-semibold underline">Find/Book Services You Want</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Popular Businesses Section */}
       <PopularBusinesses />
       
