@@ -433,7 +433,7 @@ export const PopularBusinessCard = ({ business }: PopularBusinessCardProps) => {
         </DialogTrigger>
         <DialogContent className="max-w-md max-h-[80vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle>{business.name} - Products Catalog</DialogTitle>
+            <DialogTitle>{business.name}</DialogTitle>
           </DialogHeader>
           <div className="space-y-3">
             {parseProductsCatalog(business.products_catalog).length > 0 ? (
