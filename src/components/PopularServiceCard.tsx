@@ -567,20 +567,10 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
       
       <CardContent className="flex-1 pt-3 px-3 pb-2 flex flex-col justify-between mt-[35px]">
         <div className="space-y-3">
-          <div className="flex items-center gap-2">
-            <div className="relative">
-              <img 
-                src={`${service.image_url}?w=40&h=40&fit=crop` || "https://images.unsplash.com/photo-1592659762303-90081d34b277?w=40&h=40&fit=crop"} 
-                alt="Service logo" 
-                className="w-10 h-10 rounded-md border border-gray-300"
-                style={{ objectFit: 'cover', objectPosition: 'center' }}
-              />
-            </div>
-            <div className="flex-1">
-              <h3 className="font-semibold text-sm text-foreground leading-tight line-clamp-2">
-                {service.name}
-              </h3>
-            </div>
+          <div>
+            <h3 className="font-semibold text-sm text-foreground leading-tight line-clamp-2">
+              {service.name}
+            </h3>
           </div>
           
            {(service.towns || service.province_district) && (
