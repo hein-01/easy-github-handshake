@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { PopularBusinessCard } from '@/components/PopularBusinessCard';
+import { PopularServiceCard } from '@/components/PopularServiceCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -97,7 +97,7 @@ const PopularServices = () => {
             >
             {services.map((service) => (
               <SwiperSlide key={service.id} className="!w-[260px] sm:!w-[290px]">
-                <PopularBusinessCard business={service} />
+                <PopularServiceCard service={service} />
               </SwiperSlide>
             ))}
             
@@ -152,7 +152,7 @@ const PopularServices = () => {
           >
           {services.map((service) => (
             <SwiperSlide key={service.id} className="!w-[290px] first:!ml-0 last:!mr-4">
-              <PopularBusinessCard business={service} />
+              <PopularServiceCard service={service} />
             </SwiperSlide>
           ))}
             
