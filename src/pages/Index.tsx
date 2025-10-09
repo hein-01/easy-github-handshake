@@ -9,6 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import BusinessDirectory from "./BusinessDirectory";
 import PopularBusinesses from "@/components/PopularBusinesses";
+import PopularServices from "@/components/PopularServices";
 import Footer from "@/components/Footer";
 import MobileNavBar from "@/components/MobileNavBar";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -520,6 +521,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Popular Services Section */}
+      <PopularServices />
 
       {/* Popular Businesses Section */}
       <PopularBusinesses />
