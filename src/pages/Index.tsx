@@ -154,13 +154,28 @@ const Index = () => {
                     ref={(el) => {
                       if (el) {
                         const contentWidth = el.scrollWidth / 2; // Width of one copy
-                        const speed = 80; // pixels per second - faster movement
+                        const speed = 30; // pixels per second - slower for longer duration
                         const duration = contentWidth / speed;
                         el.style.animation = `scroll-rtl ${duration}s linear infinite`;
                       }
                     }}
                     className="flex"
                   >
+                    <span className="whitespace-nowrap text-gray-400 text-xs sm:text-sm pr-8">
+                      Tap a category to select or deselect it, then enter your search keyword.
+                    </span>
+                    <span className="whitespace-nowrap text-gray-400 text-xs sm:text-sm pr-8">
+                      Tap a category to select or deselect it, then enter your search keyword.
+                    </span>
+                    <span className="whitespace-nowrap text-gray-400 text-xs sm:text-sm pr-8">
+                      Tap a category to select or deselect it, then enter your search keyword.
+                    </span>
+                    <span className="whitespace-nowrap text-gray-400 text-xs sm:text-sm pr-8">
+                      Tap a category to select or deselect it, then enter your search keyword.
+                    </span>
+                    <span className="whitespace-nowrap text-gray-400 text-xs sm:text-sm pr-8">
+                      Tap a category to select or deselect it, then enter your search keyword.
+                    </span>
                     <span className="whitespace-nowrap text-gray-400 text-xs sm:text-sm pr-8">
                       Tap a category to select or deselect it, then enter your search keyword.
                     </span>
