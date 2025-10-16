@@ -263,7 +263,3 @@ All colors MUST be HSL.
     transform: translateX(-50%);
   }
 }
-
-.animate-scroll-rtl {
-  animation: scroll-rtl 4.5s linear infinite;
-}
