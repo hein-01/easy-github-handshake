@@ -154,7 +154,7 @@ const Index = () => {
                     ref={(el) => {
                       if (el) {
                         const contentWidth = el.scrollWidth / 2; // Width of one copy
-                        const speed = 40; // pixels per second
+                        const speed = 80; // pixels per second - faster movement
                         const duration = contentWidth / speed;
                         el.style.animation = `scroll-rtl ${duration}s linear infinite`;
                       }
